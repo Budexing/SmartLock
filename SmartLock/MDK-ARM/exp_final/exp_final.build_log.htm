@@ -1,0 +1,120 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¶ÃVision V5.25.2.0
+Copyright (C) 2018 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: naoh aw765014500@126, Hewlett-Packard, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.25.2.0
+Toolchain Path:  D:\Courses\SmartCar\Path\3.Keil 5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.25.2.0
+Dialog DLL:      DCM.DLL V1.17.1.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.1.0
+Dialog DLL:      TCM.DLL V1.35.1.0
+ 
+<h2>Project:</h2>
+D:\Project\Lock\exp_final\MDK-ARM\exp_final.uvprojx
+Project File Date:  07/20/2019
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'D:\Courses\SmartCar\Path\3.Keil 5\ARM\ARMCC\Bin'
+Rebuild target 'exp_final'
+assembling startup_stm32f103xe.s...
+compiling flash-ops.c...
+compiling serial-ops.c...
+compiling keyboard.c...
+compiling wifi-ops.c...
+..\Src\wifi-ops.c(35): warning:  #550-D: variable "ret"  was set but never used
+  	int ret;
+..\Src\wifi-ops.c: 1 warning, 0 errors
+compiling stm32f1xx_it.c...
+../Src/stm32f1xx_it.c(261): warning:  #177-D: variable "temp"  was declared but never referenced
+  	uint32_t temp;
+../Src/stm32f1xx_it.c: 1 warning, 0 errors
+compiling OLED.c...
+compiling stm32f1xx_hal_msp.c...
+compiling main.c...
+../Src/main.c(155): warning:  #177-D: variable "ret"  was declared but never referenced
+  		int ret;
+../Src/main.c(257): warning:  #940-D: missing return statement at end of non-void function "ap_mode" 
+  }
+../Src/main.c(259): warning:  #550-D: parameter "ret"  was set but never used
+  void ap_mode_data(int ret)//apÊ®°Âºè‰∏ãÊé•Êî∂Êï∞Êç?
+../Src/main.c(359): warning:  #177-D: variable "gettimebuf"  was declared but never referenced
+  	char gettimebuf[64];
+../Src/main.c(545): warning:  #940-D: missing return statement at end of non-void function "station_mode_data" 
+  }
+../Src/main.c(501): warning:  #550-D: parameter "ret"  was set but never used
+  int station_mode_data(int ret)
+../Src/main.c(505): warning:  #177-D: variable "gettimebuf"  was declared but never referenced
+  	char gettimebuf[16];
+../Src/main.c(560): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+  	OLED_ShowStr(0,0,datebuf,CODE8X16);
+../Src/main.c(561): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+  	OLED_ShowStr(0,16,timebuf,CODE8X16);
+../Src/main.c(565): warning:  #940-D: missing return statement at end of non-void function "main_menu_flash" 
+  }
+../Src/main.c(571): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+  	OLED_ShowStr(0,32,starbuf,CODE8X16);
+../Src/main.c(573): warning:  #940-D: missing return statement at end of non-void function "password_flash" 
+  }
+../Src/main.c(579): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+  	OLED_ShowStr(0,16,tipsbuf,CODE8X16);
+../Src/main.c(594): warning:  #940-D: missing return statement at end of non-void function "tips_flash" 
+  }
+../Src/main.c(606): warning:  #940-D: missing return statement at end of non-void function "time" 
+  }
+../Src/main.c: 15 warnings, 0 errors
+compiling stm32f1xx_hal_gpio_ex.c...
+compiling stm32f1xx_hal_tim.c...
+compiling stm32f1xx_hal_tim_ex.c...
+compiling stm32f1xx_hal_i2c.c...
+compiling stm32f1xx_hal.c...
+compiling stm32f1xx_hal_uart.c...
+compiling stm32f1xx_hal_rcc.c...
+compiling stm32f1xx_hal_rcc_ex.c...
+compiling stm32f1xx_hal_gpio.c...
+compiling stm32f1xx_hal_cortex.c...
+compiling stm32f1xx_hal_dma.c...
+compiling stm32f1xx_hal_pwr.c...
+compiling stm32f1xx_hal_flash.c...
+compiling system_stm32f1xx.c...
+compiling stm32f1xx_hal_flash_ex.c...
+linking...
+Program Size: Code=16416 RO-data=2568 RW-data=68 ZI-data=2812  
+FromELF: creating hex file...
+"exp_final\exp_final.axf" - 0 Error(s), 17 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.3.0.pack
+                ARM.CMSIS.5.3.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.1.1
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.2.0.pack
+                Keil.STM32F1xx_DFP.2.2.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_exp_final
+  D:\Courses\SmartCar\Path\3.Keil 5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include
+  D:\Courses\SmartCar\Path\3.Keil 5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.1.1
+Build Time Elapsed:  00:00:12
+</pre>
+</body>
+</html>
