@@ -672,7 +672,7 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-	
+	printf("Hello World£¡");
 	
   while (1)
   {
