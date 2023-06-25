@@ -669,10 +669,11 @@ int main(void)
 	}
 	
   /* USER CODE END 2 */
-
+   int b,c,d;
+	printf("hello world");
+	printf("shut the fucking up");
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-	printf("Hello World£¡");
 	
   while (1)
   {
